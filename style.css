@@ -1,0 +1,128 @@
+*{
+  padding: 0px;
+  margin:0px;
+}
+body{
+  position:relative;
+  align-items: center;
+  justify-content: center;
+}
+#box{
+  align-items: center;
+  justify-content: center;
+  position:relative;
+  height:full;
+  width:100%;
+}
+#container{
+  height:78px;
+  width:238px;
+  position: relative;
+  background: whitesmoke;
+  display: flex;
+  align-content: center;
+  justify-content: center;
+  column-gap: 18px;
+  font-size: 30px;
+  left: 18%;
+  top: 50%;
+  align-items: center;
+  justify-items: center;
+  cursor: pointer;
+  border-radius: 15px;
+  opacity: 1;
+  box-shadow: ;
+}
+#container::before{
+  content: '';
+  height:80px;
+  width:240px;
+  background:tomato;
+  border-radius: 18px;
+  position: absolute;
+  opacity: 0.8;
+  z-index: -1;
+  transition:0.5s;
+  animation:rotate 5s linear infinite;
+  box-shadow: 0px 0px 150px 2px tomato;
+}
+@keyframes rotate{
+  50%{
+    filter: hue-rotate(350deg);
+  }
+}
+
+.container{
+  font-size: 30px;
+  padding:px;
+  font-family: poppins; 
+  font-weight: 500;
+  font-style: bold;
+}
+.hours,.minutes,.seconds{
+  position: relative;
+  top: 20%;
+  font-family: Orbitron;
+  font-weight:800; 
+}
+#date_container{
+  display: flex;
+  background: ;
+  position: absolute;
+  top:0px;
+  left:100%;
+  transform: translateX(-96px);
+  font-size: 15px;
+  font-family: poppins;
+  font-weight:400;
+  column-gap: 5px;
+}
+#am_pm{
+  background:;
+  position: absolute;
+  top:0;
+  left:5px;
+  font-size: 15px;
+  border-radius: 2px;
+  font-family: poppins;
+  font-weight: 600;
+}
+#image{
+  height:100vh;
+  width:100%;
+  position:absolute;
+  z-index: -2;
+  background: black;
+}
+h2{
+  font-family: poppins;
+  align-items: center;
+  text-align: center;
+  color: antiquewhite;
+  position : relative;
+  top:20%;
+  text-shadow: 10px 10px 50px whitesmoke;
+  font-size: 27px;
+  margin : 0px 0px 60px 0px;
+  padding-top:34%;
+  padding-bottom: 6%;
+ /* animation: rotate 8s linear infinite;
+  transition: 2s;*/
+  
+}
+a{
+  text-decoration: none;
+  align-items: center;
+  justify-content: center;
+}
+button{
+  display: flex;
+  align-items: center;
+  align-content: center;
+  justify-content: center;
+  border-radius: 20px;
+  height: 50px;
+  width:100px;
+  background: cornflowerblue;
+  
+}
